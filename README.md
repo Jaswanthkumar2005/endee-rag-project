@@ -59,13 +59,24 @@ Endee is used as the **vector database layer** in this project.
 ## Project Structure
 
 endee-rag-project/
+
 │
+
 ├── data/
+
 │ └── documents.txt
+
 ├── src/
+
 │ ├── ingest.py
+
 │ ├── search.py
+
 │ └── rag.py
+
 ├── requirements.txt
+
 ├── README.md
+
 └── .gitignore
+
