@@ -1,0 +1,5 @@
+Artificial Intelligence is the ability of machines to perform tasks that normally require human intelligence.
+
+Machine Learning is a subset of Artificial Intelligence that allows systems to learn from data.
+
+Deep Learning uses neural networks with many layers to analyze complex patterns.
