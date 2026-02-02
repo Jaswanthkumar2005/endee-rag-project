@@ -1,23 +1,71 @@
-# Endee RAG Project
+# Endee RAG Project – Document Question Answering System
 
 ## Project Overview
-This project builds a simple Retrieval Augmented Generation (RAG) system that answers user questions from documents using vector search.
+
+This project implements a **Retrieval Augmented Generation (RAG)** based document question answering system.  
+The system allows users to ask questions and get relevant answers from documents using **vector search**.
+
+The core idea of this project is to demonstrate how **vector embeddings** can be stored and searched efficiently, with **Endee used as the vector database layer**.
+
+---
 
 ## Problem Statement
-Searching information from large text files is difficult. This project solves the problem by using vector embeddings and semantic search.
 
-## System Design
-Documents are converted into embeddings and stored in Endee vector database. User queries are also converted into embeddings and matched using vector similarity.
+Searching information from large text documents using traditional keyword search is inefficient and inaccurate.  
+This project solves the problem by converting documents into **vector embeddings** and retrieving the most relevant content based on **semantic similarity**.
 
-## Endee Usage
-Endee is used as the vector database to store and retrieve document embeddings efficiently.
+---
 
-## Setup Instructions
-1. Install Python 3.9+
-2. Create virtual environment
-3. Install dependencies
-4. Run ingest.py
-5. Run rag.py
+## Use Case
 
-## Technologies Used
-Python, Sentence Transformers, Endee Vector Database
+**Document Question Answering (RAG)**
+
+- Input: Text documents
+- User asks a natural language question
+- System retrieves the most relevant document chunk
+- The retrieved content is returned as the answer
+
+---
+
+## System Design / Technical Approach
+
+The system works in the following steps:
+
+1. Documents are loaded from text files  
+2. Text is split into smaller chunks  
+3. Each chunk is converted into vector embeddings  
+4. Embeddings are stored in the vector database (Endee)  
+5. User query is converted into an embedding  
+6. Vector similarity search is performed  
+7. The most relevant content is returned  
+
+**Flow:**
+Documents → Embeddings → Endee Vector Store → Similarity Search → Answer
+
+
+---
+
+## How Endee is Used
+
+Endee is used as the **vector database layer** in this project.
+
+- Document embeddings are stored in a vector store
+- Vector similarity search logic follows Endee concepts
+- Demonstrates how Endee can be used in RAG-based systems
+- Aligns with real-world semantic search applications
+
+---
+
+## Project Structure
+
+endee-rag-project/
+│
+├── data/
+│ └── documents.txt
+├── src/
+│ ├── ingest.py
+│ ├── search.py
+│ └── rag.py
+├── requirements.txt
+├── README.md
+└── .gitignore
