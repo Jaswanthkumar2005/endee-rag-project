@@ -80,3 +80,61 @@ endee-rag-project/
 
 └── .gitignore
 
+
+
+---
+
+## Setup Instructions
+
+### 1. Clone the repository
+git clone https://github.com/Jaswanthkumar2005/endee-rag-project
+cd endee-rag-project
+
+### 2. Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+
+### 3. Install dependencies
+pip install -r requirements.txt
+
+
+
+---
+
+## How to Run the Project
+
+### Step 1: Store document embeddings
+python src/ingest.py
+
+### Step 2: Ask questions
+python src/rag.py
+
+**Example question:**
+What is Machine Learning?
+
+
+---
+
+## Technologies Used
+
+- Python  
+- Sentence Transformers  
+- Vector Embeddings  
+- Endee Vector Database  
+- NumPy  
+
+---
+
+## Outcome
+
+- Implemented a RAG-based question answering system
+- Demonstrated vector storage and semantic search
+- Showcased Endee usage in AI applications
+
+---
+
+## Conclusion
+
+This project demonstrates a practical AI/ML use case where **vector search is the core component**.  
+It shows how Endee can be used to build scalable systems like **RAG, semantic search, and intelligent assistants**.
